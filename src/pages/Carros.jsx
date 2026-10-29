@@ -8,7 +8,7 @@ import BMWSérie4 from '../assets/BMW Série 4.jpg'
 import Camaro from '../assets/camaro.jpg'
 import MercedesClasseG from '../assets/Mercedes-Benz Classe G.avif'
 import Porsche911Carrera from '../assets/Porsche 911 Carrera.jpg'
-import RangeRoverSport from '../assets/Range Rover Sport.avif'
+import RangeRoverSport from '../assets/Range Rover Sport.jpg'
 
 
 function Carros() {
