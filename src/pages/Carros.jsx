@@ -3,6 +3,13 @@ import { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Card from '../components/Card'
+import AudiR8 from '../assets/Audi r8.jpg'
+import BMWSérie4 from '../assets/BMW Série 4.jpg'
+import Camaro from '../assets/camaro.jpg'
+import MercedesClasseG from '../assets/Mercedes-Benz Classe G.avif'
+import Porsche911Carrera from '../assets/Porsche 911 Carrera.jpg'
+import RangeRoverSport from '../assets/Range Rover Sport.jpg'
+
 
 function Carros() {
   const [categoriaSelecionada, setCategoriaSelecionada] = useState('Todos')
@@ -15,7 +22,7 @@ function Carros() {
       categoria: 'Esportivo',
       cambio: 'Automático',
       preco: 2500,
-      imagem: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70',
+      imagem: Porsche911Carrera,
     },
     {
       id: 2,
@@ -24,7 +31,7 @@ function Carros() {
       categoria: 'SUV de luxo',
       cambio: 'Automático',
       preco: 3200,
-      imagem: 'https://images.unsplash.com/photo-1563720223185-11003d516935',
+      imagem: MercedesClasseG,
     },
     {
       id: 3,
@@ -33,7 +40,7 @@ function Carros() {
       categoria: 'Premium',
       cambio: 'Automático',
       preco: 1800,
-      imagem: 'https://images.unsplash.com/photo-1555215695-3004980ad54e',
+      imagem: BMWSérie4,
     },
     {
       id: 4,
@@ -42,7 +49,7 @@ function Carros() {
       categoria: 'Esportivo',
       cambio: 'Automático',
       preco: 2800,
-      imagem: 'https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a',
+      imagem: AudiR8,
     },
     {
       id: 5,
@@ -51,16 +58,16 @@ function Carros() {
       categoria: 'SUV de luxo',
       cambio: 'Automático',
       preco: 2900,
-      imagem: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b',
+      imagem: RangeRoverSport,
     },
     {
       id: 6,
-      nome: 'BMW Série 3',
+      nome: 'Camaro',
       ano: 2024,
       categoria: 'Premium',
       cambio: 'Automático',
       preco: 1500,
-      imagem: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d',
+      imagem: Camaro,
     },
   ]
 
