@@ -6,7 +6,7 @@ import Card from '../components/Card'
 import AudiR8 from '../assets/Audi r8.jpg'
 import BMWSérie4 from '../assets/BMW Série 4.jpg'
 import Camaro from '../assets/camaro.jpg'
-import MercedesClasseG from '../assets/Mercedes-Benz Classe G.avif'
+import MercedesClasseG from '../assets/Mercedes-Benz Classe G.jpg'
 import Porsche911Carrera from '../assets/Porsche 911 Carrera.jpg'
 import RangeRoverSport from '../assets/Range Rover Sport.jpg'
 
