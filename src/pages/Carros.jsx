@@ -77,40 +77,65 @@ function Carros() {
     <>
       <Navbar />
 
-      <main>
-        <section>
-          <h1>Nossa frota</h1>
-          <p>Encontre o carro ideal para sua próxima experiência.</p>
+      <main className="min-h-screen bg-[#111111] text-white">
+        <section className="border-b border-white/10 px-6 py-16 text-center sm:py-20">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-[#d4af37]">
+            Excelência sobre rodas
+          </p>
+
+          <h1 className="text-4xl font-bold sm:text-5xl">
+            Nossa frota
+          </h1>
+
+          <p className="mx-auto mt-4 max-w-2xl text-gray-400">
+            Encontre o carro ideal para sua próxima experiência.
+            Sofisticação, desempenho e conforto em cada viagem.
+          </p>
         </section>
 
-        <section>
-          <h2>Explore os veículos</h2>
+        <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold sm:text-3xl">
+              Explore os veículos
+            </h2>
 
-          <div>
+            <p className="mt-2 text-sm text-gray-400">
+              Escolha uma categoria para encontrar seu próximo carro.
+            </p>
+          </div>
+
+          <div className="mb-10 flex flex-wrap gap-3">
             {categorias.map((categoria) => (
               <button
                 key={categoria}
                 onClick={() => setCategoriaSelecionada(categoria)}
+                className={`rounded-full border px-5 py-2 text-sm font-medium transition-colors ${
+                  categoriaSelecionada === categoria
+                    ? 'border-[#d4af37] bg-[#d4af37] text-black'
+                    : 'border-white/20 text-gray-300 hover:border-[#d4af37] hover:text-[#d4af37]'
+                }`}
               >
                 {categoria}
               </button>
             ))}
           </div>
 
-          <div>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {carrosFiltrados.map((carro) => (
               <Card key={carro.id} carro={carro} />
             ))}
           </div>
 
           {carrosFiltrados.length === 0 && (
-            <p>Nenhum veículo encontrado nessa categoria.</p>
+            <p className="py-12 text-center text-gray-400">
+              Nenhum veículo encontrado nessa categoria.
+            </p>
           )}
-        </section>
 
-        <p>
-          * Veículos, imagens e valores apresentados são ilustrativos.
-        </p>
+          <p className="mt-8 text-xs text-gray-500">
+            * Veículos, imagens e valores apresentados são ilustrativos.
+          </p>
+        </section>
       </main>
 
       <Footer />
